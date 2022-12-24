@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #F3F3F3;
+}
+
+.pageContainer {
+  width: 1024px;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF9F9;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Header */
+header p {
+  background-color: #1CD1B0;
+  padding: 0.5rem 1rem;
+}
+header h1 {
+  background-color: #00669F;
+  padding: 2rem 1rem;
+  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* main */
+main ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 9rem 0;
+}
+main ul .batmanCard {
+  background-image: url(../img/fondo\ batman.png);
+}
+main ul .harleyCard {
+  background-image: url(../img/fondo\ harley.png);
+}
+main ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 530px;
+  width: 300px;
+}
+main ul li i {
+  color: #CC2424;
+  font-size: 1.7rem;
+  position: relative;
+  top: 1rem;
+  left: -7.5rem;
+}
+main ul li img {
+  width: 120px;
+  border-radius: 50%;
+  position: relative;
+  bottom: -4.3rem;
+}
+main ul li div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F3F3F3;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.2);
+}
+main ul li div h2 {
+  margin: 6rem 0 1rem;
+}
+main ul li div p {
+  width: 90%;
+}
+main ul li div a {
+  background-color: #00669F;
+  padding: 1rem 2rem;
+  margin: 2rem 0 1rem;
+  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.23);
+}
+
+/* Footer */
+footer p {
+  background-color: #00669F;
+  color: #FFF9F9;
+  padding: 1rem 2rem;
+}/*# sourceMappingURL=style.css.map */

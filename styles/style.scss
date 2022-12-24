@@ -1,0 +1,122 @@
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: $background-color;
+}
+
+.pageContainer {
+    width: 1024px;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: $whiteColor;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* Header */
+
+header {
+    p {
+        background-color: $headerColor;
+        padding: .5rem 1rem;
+    }
+    h1 {
+        background-color: $mainColor;
+        padding: 2rem 1rem;
+        box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.5);
+    }
+}
+
+/* main */
+
+main ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 9rem 0;
+
+    .batmanCard {
+        background-image: url(../img/fondo\ batman.png);
+    }
+
+    .harleyCard {
+        background-image: url(../img/fondo\ harley.png);
+    }
+    
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 530px;
+        width: 300px;
+        
+
+        i {
+            color: $like;
+            font-size: 1.7rem;
+            position: relative;
+            top: 1rem;
+            left: -7.5rem;
+        }
+
+        img {
+            width: 120px;
+            border-radius: 50%;
+            position: relative;
+            bottom: -4.3rem;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $background-color;
+            box-shadow: 0px 4px 8px 1px rgba(0,0,0,0.2);
+            
+
+            h2 {
+                margin: 6rem 0 1rem;
+            }
+
+            p {
+                width: 90%;
+            }
+
+            a {
+                background-color: $mainColor;
+                padding: 1rem 2rem;
+                margin: 2rem 0 1rem;
+                box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.23);
+                -webkit-box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.23);
+                -moz-box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.23);
+            }
+        }
+    }
+}
+
+/* Footer */
+
+footer p {
+    background-color: $mainColor;
+    color: $whiteColor;
+    padding: 1rem 2rem;
+}
